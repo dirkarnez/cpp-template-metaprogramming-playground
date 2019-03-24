@@ -1,19 +1,14 @@
 #include<iostream>
+#include "printlib.h"
+#include "tuplelib.h"
 
 using namespace std;
-
-void print() {
-	cout << endl;
-}
-
-template<typename TFirst, typename...TRest>
-void print(TFirst first, TRest... rest) {
-	cout << first << " ";
-	print(rest...);
-}
+using namespace tuplelib;
+using namespace printlib;
 
 int main(int argc, char *argv[]) {
-	print("2143", 345, 45.6);
+	Tuple<int, char> t = makeTuple(10, 's');
+	print(get<0>(t), get<1>(t), 345, 45.6);
 	cin.get();
 	return 0;
 }
