@@ -1,3 +1,5 @@
-cmake_minimum_required(VERSION 2.8.9)
+cmake_minimum_required(VERSION 3.0)
 project (cpp-template-metaprogramming-playground)
-add_executable(cpp-template-metaprogramming-playground main.cpp)
+
+add_subdirectory(app)
+add_subdirectory(time_slot)
