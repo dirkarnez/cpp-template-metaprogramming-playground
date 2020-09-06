@@ -12,11 +12,22 @@ if(Boost_FOUND)
 
     add_executable(${PROJECT_NAME} 
         "src/main.cpp"
-        "src/multiplication_table.h"
-        "src/printlib.h"
-        "src/tuplelib.h")
+
+        "src/time_slot_playground.cpp"
+        "include/time_slot_playground.h"
+
+        "include/smart_pointers_playground.h"
+        "src/smart_pointers_playground.cpp"
+
+        "include/multiplication_table.h"
+        "include/printlib.h"
+        "include/tuplelib.h")
+
+    target_include_directories( ${PROJECT_NAME}
+        PUBLIC ${PROJECT_SOURCE_DIR}/include
+    )
    
     target_link_libraries(${PROJECT_NAME} 
         ${Boost_LIBRARIES}
-	time_slot)
+	    time_slot)
 endif()
