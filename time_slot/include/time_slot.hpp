@@ -15,13 +15,7 @@ struct Slot
 };
 
 template<typename id_type, typename time>
-class SlotOptimizer {
-public:
-	vector<Slot<id_type, time>> solve(vector<Slot<id_type, time>> slots);
-};
-
-template <typename id_type, typename time>
-vector<Slot<id_type, time>> SlotOptimizer<id_type, time>::solve(vector<Slot<id_type, time>> slots) {
+vector<Slot<id_type, time>> solve(vector<Slot<id_type, time>> slots) {
 	vector<Slot<id_type, time>> optimized_slots;
 
 	sort(slots.begin(), slots.end(), [](Slot<id_type, time>& a, Slot<id_type, time>& b) {

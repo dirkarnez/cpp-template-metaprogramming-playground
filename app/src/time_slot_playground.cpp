@@ -28,9 +28,7 @@ void time_slot_playground::play() {
 		});
 	}
 
-	SlotOptimizer<uuid, int> so;
-	auto optimized_slots = so.solve(slots);
-
+	auto optimized_slots = solve<uuid, int>(slots);
 	int max = optimized_slots.size();
 	for (int i = 0; i < max; i++)
 	{

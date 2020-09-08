@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 {
 	time_slot_playground().play();
 	smart_pointers_playground().play();
+
 	system("pause");
 	return 0;
 }
