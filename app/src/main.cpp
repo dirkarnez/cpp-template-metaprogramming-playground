@@ -2,14 +2,13 @@
 #include <string>
 #include "printlib.h"
 #include "tuplelib.h"
-#include "multiplication_table.h"
+#include "multiplication_table_playground.h"
 #include "time_slot_playground.h"
 #include "smart_pointers_playground.h"
 
 using namespace std;
 using namespace tuplelib;
 using namespace printlib;
-using namespace multiplication_table;
 
 template <typename T>
 auto get_value(T t) {
@@ -32,8 +31,9 @@ auto get_value(T t) {
 
 int main(int argc, char *argv[]) 
 {
-	time_slot_playground().play();
-	smart_pointers_playground().play();
+	// time_slot_playground().play();
+	// smart_pointers_playground().play();
+	multiplication_table_playground().play();
 
 	system("pause");
 	return 0;

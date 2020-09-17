@@ -1,5 +1,4 @@
-#ifndef PRINT_LIB_H
-#define PRINT_LIB_H
+#pragma once
 
 namespace printlib
 {
@@ -15,5 +14,3 @@ namespace printlib
 		print(rest...);
 	}
 }
-
-#endif

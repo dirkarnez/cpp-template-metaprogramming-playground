@@ -1,5 +1,4 @@
-#ifndef TUPLE_LIB_H
-#define TUPLE_LIB_H
+#pragma once
 
 namespace tuplelib
 {
@@ -50,5 +49,3 @@ namespace tuplelib
 		fillTuple<idx + 1>(toFill, rest...);
 	}
 }
-
-#endif

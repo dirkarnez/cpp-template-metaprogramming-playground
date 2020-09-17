@@ -3,3 +3,4 @@ project (cpp-template-metaprogramming-playground)
 
 add_subdirectory(app)
 add_subdirectory(time_slot)
+add_subdirectory(multiplication_table)

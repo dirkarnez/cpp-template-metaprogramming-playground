@@ -16,10 +16,12 @@ if(Boost_FOUND)
         "src/time_slot_playground.cpp"
         "include/time_slot_playground.h"
 
-        "include/smart_pointers_playground.h"
         "src/smart_pointers_playground.cpp"
+        "include/smart_pointers_playground.h"
 
-        "include/multiplication_table.h"
+        "src/multiplication_table_playground.cpp"
+        "include/multiplication_table_playground.h"
+
         "include/printlib.h"
         "include/tuplelib.h")
 
@@ -29,5 +31,7 @@ if(Boost_FOUND)
    
     target_link_libraries(${PROJECT_NAME} 
         ${Boost_LIBRARIES}
-	    time_slot)
+	    time_slot
+        multiplication_table
+    )
 endif()
