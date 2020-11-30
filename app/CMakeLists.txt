@@ -3,7 +3,7 @@ project(app)
 
 set(Boost_NO_SYSTEM_PATHS TRUE)
 set(Boost_USE_STATIC_LIBS TRUE)
-set(BOOST_ROOT "D:/Cpp Libraries/boost_1_73_0")
+set(BOOST_ROOT "C:/Code Projects/Cpp Libraries/boost_1_74_0")
 
 find_package(Boost REQUIRED COMPONENTS system filesystem)
 
@@ -33,5 +33,6 @@ if(Boost_FOUND)
         ${Boost_LIBRARIES}
 	    time_slot
         multiplication_table
+        lookup_table
     )
 endif()

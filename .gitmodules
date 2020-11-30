@@ -1,0 +1,4 @@
+[submodule "lookup_table"]
+	path = lookup_table
+	url = https://github.com/dirkarnez/lookup_table
+	branch = main

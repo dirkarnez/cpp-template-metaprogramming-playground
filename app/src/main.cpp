@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#include <array>
 #include "printlib.h"
 #include "tuplelib.h"
 #include "multiplication_table_playground.h"
 #include "time_slot_playground.h"
 #include "smart_pointers_playground.h"
+#include "lookup_table.h"
 
 using namespace std;
 using namespace tuplelib;
@@ -33,7 +35,13 @@ int main(int argc, char *argv[])
 {
 	// time_slot_playground().play();
 	// smart_pointers_playground().play();
-	multiplication_table_playground().play();
+	//multiplication_table_playground().play();
+
+	int array[10];
+	GetRandomNumberArrayOfLength10(array);
+	for (int i = 0; i < 10; i++) {
+		cout << array[i] << endl;
+	}
 
 	system("pause");
 	return 0;

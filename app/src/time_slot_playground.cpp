@@ -29,10 +29,10 @@ void time_slot_playground::play() {
 	}
 
 	auto optimized_slots = solve<uuid, int>(slots);
-	int max = optimized_slots.size();
+	size_t max = optimized_slots.size();
 	for (int i = 0; i < max; i++)
 	{
-		auto slot = optimized_slots.at(i);
+		const auto& slot = optimized_slots.at(i);
 		cout << "\t" << slot.id << "\t\t" << slot.begin << "\t" << slot.end << endl;
 	}
 
